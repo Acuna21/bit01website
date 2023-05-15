@@ -1,0 +1,203 @@
+body{
+    background-color: #f4f4f4;
+}
+
+h1{
+    font-style: italic;
+    font-size: 60px;
+    margin: 4rem 2rem;
+    color:#1d448e;
+}
+
+h2{
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+img{
+    /* width: 400px; */
+    height: 300px;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+}
+p{
+    color:white;
+    font-size: 40px;
+}
+
+text{
+    font-size: 30px;
+    align-items: center;
+    color:white;
+    max-width: 500px;
+    text-align: justify;
+    margin-right: 2rem;
+}
+
+span{
+    margin: 0 3rem;
+    font-size: 25px;
+}
+
+
+.home-info{
+    background-repeat: no-repeat;
+    display: flex;
+    height: 400px;
+    background-color:rgba(216, 216, 248, 0.4);
+    align-items: center;
+}
+
+.text-color{
+    color: #031b4e;
+    font-weight: bold;
+}
+
+.color{
+    color: #031b4e;
+}
+
+.mision{
+    position: relative;
+}
+
+.img-mision{
+    width: 100%;
+    height: 800px;
+    opacity: 0.5;
+}
+
+.container-mision{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.conta-defec{
+    display: flex;
+    flex-direction: column;
+}
+
+.conta{
+    display: flex;
+    margin: 0 2rem;
+
+}
+
+.p-valores{
+    font-size: 25px;
+    margin: 0rem 3rem;
+    color: #031b4e;
+    line-height: 1.8;
+    max-width: 800px;
+    text-align: justify;
+}
+
+.titles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container-aprender{
+    display: flex;
+    padding-bottom: 7rem;
+    margin-top: 5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+/* NAVBAR */
+nav{
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+h3{
+    color:#1d448e;
+    font-size: 40px;
+    margin-right: 8rem;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav{
+    display: flex;
+}
+
+li{
+    padding: 1rem;
+    font-size: 20px;
+}
+
+.home, .aprender {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.aprender:hover,
+.home:hover {
+  text-decoration: underline;
+}
+
+
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 200px;
+    height: 20px;
+}
+
+.lema{
+    display: flex;
+    align-items: center;
+}
+
+
+.search-form{
+    display: flex;
+    align-items: center;
+}
+
+.search-button {
+    padding: 3px 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #1d448e;
+    color: #fff;
+    cursor: pointer;
+    height: 30px;
+}
+
+.menu-search{
+    display: flex;
+    align-items: center;
+}
+
+.inicio-sesion{
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+}
+
+.a-redi{
+    text-decoration: none;
+    border: 1px solid #1d448e;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.a-redi:hover{
+    border:1px solid #0056bf;
+}

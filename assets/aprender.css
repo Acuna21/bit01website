@@ -1,0 +1,93 @@
+
+/* NAVBAR */
+nav{
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100vb;
+}
+
+h3{
+    color:#1d448e;
+    font-size: 40px;
+    margin-right: 8rem;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+li{
+    padding: 1rem;
+    font-size: 20px;
+}
+
+.home, .aprender {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.aprender:hover,
+.home:hover {
+  text-decoration: underline;
+}
+
+
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 200px;
+    height: 20px;
+}
+
+.lema{
+    display: flex;
+    align-items: center;
+}
+
+
+.search-form{
+    display: flex;
+    
+}
+
+.search-button {
+    padding: 3px 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #1d448e;
+    color: #fff;
+    cursor: pointer;
+    height: 30px;
+}
+
+.menu-search{
+    display: flex;
+    align-items: center;
+}
+
+.inicio-sesion{
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+}
+
+.a-redi{
+    text-decoration: none;
+    border: 1px solid #1d448e;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.a-redi:hover{
+    border:1px solid #0056bf;
+}
+
+
+
+
+

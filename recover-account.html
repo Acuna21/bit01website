@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear cuenta</title>
+    <title>Recupera cuenta</title>
     <link rel="stylesheet" href="./assets/recover-account.css">
 </head>
 <body>
+    <nav>
+        <div class="lema ">
+            <h3>LearYOUP</h3>
+            
+        </div>
+        
+        <div class="menu-search" >
+            <form style="margin-left: 2rem;" class="search-form">
+                <input type="text" placeholder="Buscar para aprender">
+                <button type="submit" class="search-button">Buscar</button>
+            </form>
+
+            <ul class="menu">
+                <li><a href="./index.html" class="home" target="_blank">Home</a></li>
+                <li><a href="#" class="aprender">Aprender</a></li>
+                <li class="inicio-sesion"><a href="./login.html" target="_blank" class="a-redi">Inicio de sesión</a></li>
+                <li><a href="" target="_blank">Otro</a></li>
+            </ul>
+        </div>
+    </nav>
+
    <div class="container-main">
        <header>
             <h2 class="title-main"> Recupera tu cuenta</h2>
@@ -24,7 +45,7 @@
                     Ingresa tu correo electrónico, teléfono o nombre de usuario y te enviaremos un enlace para que recuperes el acceso a tu cuenta.
                 </span>
         
-                <form action="/enviar">
+                <form action="/enviar" class="form-home">
                     <label for="user"></label>
                     <input type="user" id="email" name="user" placeholder="Correo electrónico, télefono o usuario" required><br>
                     
@@ -37,7 +58,7 @@
                     <p>o</p>
     
                     <button class="home text-color defect">
-                       <strong> <a >Volver a inicio de sesión</a></strong>
+                       <strong> <a href="./login.html" target="_blank">Volver a inicio de sesión</a></strong>
                     </button>
                 </div>
             </div>
@@ -47,8 +68,26 @@
      <div id="myModal" class="modal">
          <div class="modal-content">
             <a href="/recover-account.html" class="close">&times;</a>
-            <h2 class="text-color">Crear cuenta</h2>
-            <p>Este es un ejemplo de modal en HTML sin usar JavaScript.</p>
+            <h2 class="text-color title">Registrate</h2>
+            
+            <form class="form-create">
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo" required>
+              
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+              
+                <label for="phone"></label>
+                <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número de teléfono">
+              
+                <label for="password"></label>
+                <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+
+                <label for="password"></label>
+                <input type="password" id="confirmed-password" name="confirmed-password" placeholder="Confirma tu contraseña" required>
+              
+                <button type="submit" class="button-create">Crear cuenta</button>
+              </form>
          </div>
      </div>
 
