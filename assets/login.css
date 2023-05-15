@@ -132,6 +132,7 @@ a{
 .title-modal{
     border-bottom: 1px solid #ccc;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .form-create{
@@ -146,12 +147,5 @@ a{
     width: 220px;
     border-radius: 4px;
 }
-
-
-
-
-
-
-
 
 
