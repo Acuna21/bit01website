@@ -5,9 +5,13 @@ body{
     height: 600px;
 }
 
-.text{
-    color: #031b4e;
+input{
+    min-width: 250px;
+    border: 1px solid #031b4e;;
+}
 
+input:focus {
+    outline: none;
 }
 
 h2{
@@ -20,6 +24,27 @@ img{
     border-radius: 5px;
 }
 
+span{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    font-size: 18px;
+    justify-content: center;
+}
+
+a{
+    color: #031b4e;
+}
+/* linea de bajo general */
+.defect:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.text-color{
+    color: #031b4e;
+}
+
 .title{
     justify-content: center;
     width: 300px;
@@ -27,28 +52,21 @@ img{
     display: flex;
 }
 
-
-.container-sesion{
+.container-login{
     display: flex;
     width: 350px;
 }
 
-input{
-    min-width: 250px;
-   
+.login-form{
+    display: grid;
+    border-bottom: 1px solid #ccc;
 }
 
-.sesion{
+.login{
     margin-left: 3rem;
     border: 1px solid #ccc;
     padding: 2rem 4rem;
     border-radius: 4px;
-    
-}
-
-form{
-    display: grid;
-    border-bottom: 1px solid #ccc;
 }
 
 .button-send, input{
@@ -59,7 +77,7 @@ form{
 .button-send{
     cursor: pointer;
     font-size: 16px;
-    background-color: #1d448e;;
+    background-color: #1d448e;
     border: 1px solid #1d448e;
     color:white;
     border: none;
@@ -72,18 +90,12 @@ form{
     border: 1px solid #0056bf;
 }
 
-span{
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    font-size: 18px;
-    justify-content: center;
+footer{
+
 }
 
-.defect:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
+
+
 
 
 

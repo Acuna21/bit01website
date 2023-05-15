@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+    <link rel="stylesheet" href="./assets/recover-account.css">
+</head>
+<body>
+   <div class="container-main">
+       <header>
+            <h2 class="title-main"> Recupera tu cuenta</h2>
+        </header>
+        
+       <div class="container">
+            <div class="header-cont">
+                <img src="./assets/privado.png" alt="Seguridad">
+                <h2 class="text-color">¿Tienes problemas para iniciar sesión?</h2>
+            </div>
+    
+            <div class="info-account">
+                <span>
+                    Ingresa tu correo electrónico, teléfono o nombre de usuario y te enviaremos un enlace para que recuperes el acceso a tu cuenta.
+                </span>
+        
+                <form action="/enviar">
+                    <label for="user"></label>
+                    <input type="user" id="email" name="user" placeholder="Correo electrónico, télefono o usuario" required><br>
+                    
+                    <input type="submit" value="Enviar enlace" class="button-send new-link">
+                </form>
+    
+                <div class="create">
+                    <button class="create-account text-color defect"><strong><a href="#myModal">Crear cuenta</a></strong></button>
+    
+                    <p>o</p>
+    
+                    <button class="home text-color defect">
+                       <strong> <a >Volver a inicio de sesión</a></strong>
+                    </button>
+                </div>
+            </div>
+       </div>
+    
+    <!-- Modal -->
+     <div id="myModal" class="modal">
+         <div class="modal-content">
+            <a href="/recover-account.html" class="close">&times;</a>
+            <h2 class="text-color">Crear cuenta</h2>
+            <p>Este es un ejemplo de modal en HTML sin usar JavaScript.</p>
+         </div>
+     </div>
+
+   </div>
+</body>
+</html>
