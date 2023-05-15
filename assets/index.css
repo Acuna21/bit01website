@@ -189,6 +189,7 @@ input[type="text"] {
     background-color: transparent;
     color: white;
     font-weight: bold;
+  
 }
 
 .a-redi{
@@ -201,8 +202,6 @@ input[type="text"] {
 .a-redi:hover{
     border:1px solid #0056bf;
 }
-
-
 
 /* footer */
 footer {
