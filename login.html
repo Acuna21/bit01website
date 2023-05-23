@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesion</title>
     <link rel="stylesheet" href="./assets/login.css">
+    
 </head>
 
 <body>
@@ -21,24 +22,28 @@
                 <h2 class="text-color">¡Es hora de aprender!</h2>
             </div>
     
-            <form class="login-form">
+            <form class="login-form" id="formLogin">
+                
                 <label for="user"></label>
-                <input type="user" id="email" name="user" placeholder="Correo electrónico, télefono o usuario" required><br>
+                <input type="user" id="user" name="user" placeholder="Correo electrónico, télefono o usuario">
+                <p id="alertUser" class="valid"></p>
 
                 <label for="password"></label>
-                <input type="password" id="password" name="password" placeholder="Contraseña" required><br>
+                <input type="password" id="password" name="password" placeholder="Contraseña">
+                <p id="alertPassword" class="valid"></p>
 
-                <button type="submit" class="button-send">Iniciar sesión</button>
+                <p class="exitLogin" id=" loginMessage"></p>
+
+                <button type="submit" class="button-send" id="sub">Iniciar sesión</button>
             </form>
 
             <div class="new-con">
                 <span class="text-color defect"><a href="./recover-account.html" target="_blank">¿Olvidaste tu contraseña?</a></span>
 
                 <span> 
-                    <a href="#myModal">¿No tienes una cuenta? <strong>Registrate</a></strong>
+                    <a href="#myModal" id="registerLink">¿No tienes una cuenta? <strong>Registrate</a></strong>
                 </span>
             </div>
-            
         </div>
     </div>
 
@@ -47,30 +52,33 @@
         <div class="modal-content">
            <a href="/recover-account.html" class="close">&times;</a>
            <h2 class="text-color title-modal">Registrate</h2>
-           
-           <form class="form-create">
+
+           <form class="form-create" id="formCreateUser">
                <label for="name"></label>
                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo" required>
-             
+
                <label for="email"></label>
                <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
-             
+
                <label for="phone"></label>
                <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número de teléfono">
-             
-               <label for="password"></label>
-               <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
 
                <label for="password"></label>
+               <input type="password" id="passwordCreated" name="password" placeholder="Ingresa tu contraseña" required>
+
+               <label for="confirmed-password"></label>
                <input type="password" id="confirmed-password" name="confirmed-password" placeholder="Confirma tu contraseña" required>
-             
+
+               <p class="exitLogin" id="createUserMessage"></p>
+
+               <p class="valid" id="createUserMessageError"></p>
+
                <button type="submit" class="button-create">Crear cuenta</button>
              </form>
         </div>
     <!-- Pagina de inicio de sesion -->
     </div>
 
-
+    <script src="./js/login.js"></script>
 </body>
-
 </html>

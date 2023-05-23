@@ -69,6 +69,18 @@ a{
     border-radius: 4px;
 }
 
+.valid{
+    color: #f02849;
+    margin-top: 0;
+   
+}
+
+.exitLogin{
+    color:green;
+    font-weight: bold;
+    margin-top: 0;
+}
+
 .button-send, input{
     height: 35px;
     border-radius: 4px;
