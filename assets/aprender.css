@@ -191,7 +191,10 @@ footer {
   .menu-search{
     display: block;
     align-items: flex-start;
-   
+  }
+
+  .container-categoria{
+    padding-right: 35px;
   }
 
 
