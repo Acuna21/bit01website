@@ -178,4 +178,21 @@ footer {
   }
 
 
- 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+
+  h3{
+  font-size: 30px;
+  }
+
+  nav{
+    height: 200px;
+    display: block;
+  }
+  .menu-search{
+    display: block;
+    align-items: flex-start;
+   
+  }
+
+
+}
