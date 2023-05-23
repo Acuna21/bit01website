@@ -194,8 +194,11 @@ footer {
   }
 
   .container-categoria{
-    padding-right: 35px;
+    padding-right: 0;
   }
 
+  li{
+    padding: 0.5rem;
+  }
 
 }

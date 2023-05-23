@@ -184,11 +184,15 @@ a{
 
     .login{
         margin-left: 0;
-        padding: 1rem 2rem;
+        border: none;
     }
 
     img{
-        width: 300px;
+        display: none;
+    }
+
+    .modal-content{
+        width: 50%;
     }
 }
 
