@@ -1,0 +1,132 @@
+
+/* NAVBAR */
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu{
+    display: flex;
+    list-style-type: none;
+}
+
+.logo{
+    width: 100px;
+    margin: 0;
+}
+
+.nav-option{
+    padding: 0.5rem;
+}
+
+.create-account, .login{
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color:white;
+    border-radius: 4px;
+}
+
+.login{
+    background-color: transparent;
+    color:#1d448e;
+    border: 1px solid #ccc;
+}
+
+.create-account{
+    background-color: #1d448e;
+}
+
+.create-account:hover{
+    border:1px solid #143c88;
+}
+
+.login:hover{
+    border:1px solid #0056bf;
+}
+
+.home, .aprender {
+    text-decoration: none;
+}
+
+.aprender:hover,
+.home:hover {
+  text-decoration: underline;
+}
+
+/* buscador */
+.search-nav{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 200px;
+    height: 20px;
+}
+.lema{
+    display: flex;
+    align-items: center;
+}
+
+.search-form{
+    display: flex;
+    align-items: center;
+}
+
+.search-button {
+    padding: 3px 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #1d448e;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-search{
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-device-width: 1025px) {
+    nav{
+        display: block;
+    }
+
+    .logo{
+        width: 250px;
+    }
+
+    .lema{
+        justify-content: center
+    }
+
+    .nav-menu a{
+        font-size: 23px;
+    }
+
+    .search-nav{
+        height: 23px;
+    }
+
+    .search-button{
+        font-size: 23px;
+    }
+
+    .menu-search, .home-info, .tools, .values{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-device-width: 668px) {
+
+    .nav-menu{
+        flex-direction: column;
+        padding: 0;
+        gap: 15px;
+    }
+
+    .nav-option{
+        text-align: center;
+       
+    }
+}
