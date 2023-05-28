@@ -1,30 +1,10 @@
-body, html{
+body{
     margin: 0;
     display: flex;
     justify-content: center;
     /* align-items: center; */
     flex-direction: column;
     background-color: #f4f4f4;
-}
-
-span{
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    font-size: 18px;
-    justify-content: center;
-}
-
-input{
-    width: 210px;
-    border-radius: 4px;
-    border: 1px solid #031b4e;
-    height: 35px;
-    margin-bottom: 10px;
-}
-
-input:focus {
-    outline: none;
 }
 
 a{
@@ -42,38 +22,61 @@ a{
     cursor: pointer;
 }
 
-.container-main{
+.recover-account{
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.title-main{
+.title-account{
     font-style: italic;
     font-size: 30px;
     color: #031b4e;
 }
 
-.container{
+.information{
     border: 1px solid #ccc;
     padding: 2rem;
-    width: 500px;
+    width: 40%;
+    min-width: 500px;
+    margin-bottom: 3rem;
 }
 
-.header-cont{
+.title-secundary{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     border-bottom: 1px solid #ccc;
 }
 
-.form-home{
+.descrip-required{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.form-recover-account{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-bottom: 1px solid #ccc;
+}
+
+.form-recover-account input{
+    width: 210px;
+    border-radius: 4px;
+    border: 1px solid #031b4e;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.form-recover-account:focus {
+    outline: none;
 }
 
 .button-send, .button-create{
@@ -95,13 +98,13 @@ a{
     width: 220px;
 }
 
-.create{
+.option-login{
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
 }
 
-.home, .create-account{
+.login, .create-account{
     border:none;
     background-color: transparent;
     cursor: pointer;
@@ -159,148 +162,13 @@ a{
     width: 220px;
     border-radius: 4px;
     margin-top:1rem;
-  
+
 }
 
 
-/* NAVBAR */
-nav{
-    height: 80px;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
+
+@media screen and (max-device-width: 668px) {
+    .information{
+        min-width: 300px;
+    }
 }
-
-h3{
-    color:#1d448e;
-    font-size: 40px;
-    margin-right: 8rem;
-}
-
-ul{
-    display: flex;
-    list-style-type: none;
-}
-
-li{
-    padding: 1rem;
-    font-size: 20px;
-}
-
-.home, .aprender {
-    text-decoration: none;
-}
-
-.aprender:hover,
-.home:hover {
-  text-decoration: underline;
-}
-
-.input-search{
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
-    width: 200px;
-    height: 20px;
-}
-
-.lema{
-    display: flex;
-    align-items: center;
-}
-
-.search-form{
-    display: flex;
-    
-}
-
-.search-button {
-    padding: 3px 10px;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    background-color: #1d448e;
-    color: #fff;
-    cursor: pointer;
-    height: 30px;
-}
-
-.menu-search{
-    display: flex;
-    align-items: center;
-}
-
-.inicio-sesion{
-    cursor: pointer;
-    background-color: transparent;
-    color: white;
-    font-weight: bold;
-}
-
-.a-redi{
-    text-decoration: none;
-    border: 1px solid #1d448e;
-    padding: 0.5rem;
-    border-radius: 4px;
-}
-
-.a-redi:hover{
-    border:1px solid #0056bf;
-}
-
-
-/* footer */
-footer {
-    background-color: #031b4e;;
-    padding: 20px;
-    text-align: center;
-    margin-top: 4rem;
-  }
-  
-  .footer-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .footer-content p {
-    margin-bottom: 10px;
-  }
-  
-  .footer-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .footer-links li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  .footer-links li:last-child {
-    margin-right: 0;
-  }
-  
-  .footer-links a {
-    color: #ccc;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .footer-links a:hover {
-    text-decoration: underline;
-  }
-
-  .title-footer{
-    color: white;
-    font-size: 40px;
-  }
-  
-
-
-
-
-
-

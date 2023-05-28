@@ -5,58 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recupera cuenta</title>
-    <link rel="stylesheet" href="assets/recover-account.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/recover-account.css">
 </head>
 <body>
     <nav>
-        <div class="lema ">
-            <h3>LearnYOUP</h3>
+        <div class="lema">
+            <a href="index.html"><img src="assets/logo2.png" class="logo"></a>
         </div>
         
         <div class="menu-search" >
             <form style="margin-left: 2rem;" class="search-form">
-                <input type="text" placeholder="Buscar para aprender" class="input-search">
+                <input type="text" placeholder="Buscar para aprender" class="search-nav">
                 <button type="submit" class="search-button">Buscar</button>
             </form>
 
-            <ul class="menu">
-                <li><a href="index.html" class="home" target="_blank">Home</a></li>
-                <li><a href="#" class="aprender">Aprender</a></li>
-                <li class="inicio-sesion"><a href="login.html" target="_blank" class="a-redi">Inicio de sesión</a></li>
-                <li><a href="" target="_blank">Otro</a></li>
+            <ul class="nav-menu">
+                <li class="nav-option">
+                    <a href="index.html" class="home" target="_blank">Home</a>
+                </li>
+
+                <li class="nav-option">
+                    <a href="aprender.html" class="aprender" target="_blank">Aprender</a>
+                </li>
+
+                <li class="nav-option">
+                    <a href="login.html" target="_blank" class="login">Acceder</a>
+                </li>
+
+                <li class="nav-option">
+                    <a href="#Mymodal" class="create-account" target="_blank" class="a-redi">Crear cuenta</a>
+                </li>
             </ul>
         </div>
     </nav>
 
-   <div class="container-main">
+   <div class="recover-account">
        <header>
-            <h2 class="title-main"> Recupera tu cuenta</h2>
+            <h2 class="title-account"> Recupera tu cuenta</h2>
         </header>
         
-       <div class="container">
-            <div class="header-cont">
+       <div class="information">
+        
+            <div class="title-secundary">
                 <img src="assets/privado.png" alt="Seguridad">
                 <h2 class="text-color">¿Tienes problemas para iniciar sesión?</h2>
             </div>
     
             <div class="info-account">
-                <span>
+                <p class="descrip-required">
                     Ingresa tu correo electrónico, teléfono o nombre de usuario y te enviaremos un enlace para que recuperes el acceso a tu cuenta.
-                </span>
+                </p>
         
-                <form action="/enviar" class="form-home">
+                <form action="/enviar" class="form-recover-account">
                     <label for="user"></label>
-                    <input type="user" id="email" name="user" placeholder="Correo electrónico, télefono o usuario" required><br>
+                    <input type="email" id="email" name="user" placeholder="Correo electrónico, télefono o usuario" required><br>
                     
                     <input type="submit" value="Enviar enlace" class="button-send new-link">
                 </form>
     
-                <div class="create">
+                <div class="option-login">
+
                     <button class="create-account text-color defect"><strong><a href="#myModal">Crear cuenta</a></strong></button>
     
                     <p>o</p>
     
-                    <button class="home text-color defect">
+                    <button class="login text-color defect">
                        <strong> <a href="login.html" target="_blank">Volver a inicio de sesión</a></strong>
                     </button>
                 </div>
@@ -91,15 +106,17 @@
     </div>
     </div>
 
-   <footer>
-    <div class="footer-content">
-      <p class="title-footer">&copy; 2023 LearnYOP</p>
-      <ul class="footer-links">
-        <li><a href="index.html">Acerca de nosotros</a></li>
-        <li><a href="#">Términos y condiciones</a></li>
-        <li><a href="#">Política de privacidad</a></li>
-      </ul>
-    </div>
-  </footer>
+    <footer>
+        <div class="footer-content">
+          <p class="info-year">&copy; 2023 LearnYOUP</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Acerca de nosotros</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+          </ul>
+        </div>
+    </footer>
+
+    <script src="/docs/js/recover-account.js"></script>
 </body>
 </html>
