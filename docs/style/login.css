@@ -104,8 +104,6 @@ a{
 }
 
 
-
-
 /* Estilos para el modal */
 .modal {
     display: none;
@@ -162,7 +160,6 @@ a{
     background-color: #1d448e;
     cursor: pointer;
     color: white;
-
 }
 
 .button-create:hover{
