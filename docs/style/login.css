@@ -52,6 +52,7 @@ h2{
     border-radius: 4px;
     max-width: 400px;
     margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 
 .valid{
@@ -110,6 +111,10 @@ h2{
     .info-login{
         border: 1px solid #ccc;
     }
+
+    .input-login{
+        font-size: 18px;
+    }
 }
 
 
@@ -121,9 +126,15 @@ h2{
     .info-login{
         margin-top: 0;
         border: 0;
+       
     }
 
     .title-login {
         margin-bottom: 1rem;
     }
+
+    .input-login{
+        font-size: 14px;
+    }
+
 }

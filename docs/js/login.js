@@ -64,53 +64,78 @@ document.getElementById("formLogin").addEventListener("submit", (event)=> {
 });
 
 // Crear un nuevo usuario y guardarlo en listUser
-console.log(document.getElementById("formCreateUser"));
 document.getElementById("formCreateUser").addEventListener("submit", (event) => {
     event.preventDefault();
-    
+  
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let phone = document.getElementById("phone").value;
-    let password= document.getElementById("passwordCreated").value;
+    let password = document.getElementById("passwordCreated").value;
     let confirmedPassword = document.getElementById("confirmed-password").value;
-
+  
     let createUserMessage = document.getElementById("createUserMessage");
     let createUserMessageError = document.getElementById("createUserMessageError");
-
-     // Verificar si el usuario ya existe en listUser
-     let existingUser = listUser.find((user) => user.user === email);
-     if (existingUser) {
-        createUserMessageError.textContent = "El usuario que ingresaste ya existe. Por ende, verifica los datos";
-         return;
-     }
   
-
-    // Verificar si los campos requeridos están completos y si las contraseñas coinciden
-    if (name && email && password && confirmedPassword && password === confirmedPassword) {
-        // Crear un nuevo objeto de usuario
-        let newUser = {
-            name: name,
-            email: email,
-            phone: phone,
-            password: password
-        };
-
-        // Agregar el nuevo usuario a la lista listUser
-        listUser.push(newUser);
-
-    
-        // Mostrar un mensaje o redirigir a una página de éxito de registro
-        createUserMessage.textContent="¡Usuario creado con éxito!";
-        console.log(listUser);
-        // Restablecer los valores del formulario
-        document.getElementById("formCreateUser").reset();
-    } else {
-        alert("Por favor, completa todos los campos y asegúrate de que las contraseñas coincidan.");
-        console.log("Error: campos incompletos o contraseñas no coinciden");
+    // Verificar si el usuario ya existe en listUser
+    let existingUser = listUser.find((user) => user.email === email);
+    if (existingUser) {
+      createUserMessageError.textContent = "El usuario que ingresaste ya existe. Por favor, verifica los datos.";
+      return;
     }
-});
+  
+    // Verificar si los campos requeridos están completos
+    if (!name || !email || !password || !confirmedPassword) {
+      alert("Por favor, completa todos los campos del formulario.");
+      return;
+    }
+  
+    // Verificar si las contraseñas coinciden
+    if (password !== confirmedPassword) {
+      alert("Las contraseñas no coinciden. Por favor, verifica.");
+      return;
+    }
+
+    // Verificar si se ingresó el número de teléfono
+    if (!phone) {
+        alert("Por favor, ingresa tu número de teléfono.");
+        return;
+    }
+  
+    // Crear un nuevo objeto de usuario
+    let newUser = {
+      name: name,
+      email: email,
+      phone: phone,
+      password: password
+    };
+  
+    // Agregar el nuevo usuario a la lista listUser
+    listUser.push(newUser);
+  
+    // Mostrar los detalles del usuario creado con éxito
+    alert(`¡Usuario creado con éxito!
+        Nombre: ${newUser.name}
+        Correo electrónico: ${newUser.email}
+        Teléfono: ${newUser.phone}`
+    );
+
+    closeModal();
+    console.log(listUser);
+
+    // Redirigir a otra página después de 2 segundos
+    setTimeout(() => {
+        window.location.href = "mainStudy.html";
+    }, 500);
 
 
-function closeModal(){
-    document.getElementById("formLogin").reset;
-}
+    // Restablecer los valores del formulario
+    document.getElementById("formCreateUser").reset();
+  });
+  
+  
+  function closeModal() {
+    let modal = document.getElementById("myModal");
+    let form = document.getElementById("formCreateUser");
+    modal.style.display = "none";
+    form.reset();
+  }

@@ -1,0 +1,81 @@
+.color{
+    color: #031b4e;
+}
+
+
+.keep-learning, .container-recommended{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+   
+
+}
+
+.car-curse{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+
+.container-image{
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.description-curse{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.active-certification{
+    height: 30px;
+    background-color: #031b4e;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+
+.active-certification:hover{
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+.name-curse, .category{
+    margin: 0;
+}
+
+.complete-curse{
+    display: flex;
+}
+
+.more-curses{
+    display: flex;
+    align-items: center;
+}
+
+.more-curses img{
+    width: 50px;
+}
+
+.curse-recommended{
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.img-recommended, .more-curses image{
+    width: 80px;
+    margin-right: 0.5rem;
+}
+
+.curse-recommended h4{
+    font-size: 20px;
+}

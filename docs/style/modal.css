@@ -27,6 +27,7 @@
 }
 
 .input-modal{
+    font-size: 17px;
     height: 35px;
     border-radius: 4px;
     margin-bottom: 10px;
@@ -34,7 +35,7 @@
     border: 1px solid #031b4e;;
 }
 
-.input-login:focus {
+.input-modal:focus {
     outline: none;
 }
 
@@ -50,13 +51,13 @@
     border-bottom: 1px solid #ccc;
     text-align: center;
     margin-bottom: 10px;
+    font-size: 30px;
 }
 
 .form-create{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5px;
 }
 
 .button-create{
@@ -66,9 +67,28 @@
     background-color: #1d448e;
     cursor: pointer;
     color: white;
+    font-size: 18px;
 }
 
 .button-create:hover{
     background-color: #0056bf;
     border: 1px solid #0056bf;
+}
+
+
+@media screen and (max-device-width: 668px){
+
+    .modal-content{
+        width: 70%;
+    }
+}
+
+@media screen and (max-device-width: 668px){
+    .title-modal{
+        font-size: 25px;
+    }
+
+    .input-modal,  .button-create{
+        font-size: 14px;
+    }
 }
