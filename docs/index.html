@@ -16,8 +16,8 @@
     " integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/> 
 </head>
 
-<div>
-    <body>
+<body>
+    <div>
         <nav>
             <div class="lema">
                 <a href="index.html"><img src="assets/logo2.png" class="logo"></a>
@@ -28,31 +28,31 @@
                     <input type="text" placeholder="Buscar para aprender" class="search-nav">
                     <button type="submit" class="search-button">Buscar</button>
                 </form>
-
+    
                 <ul class="nav-menu">
                     <li class="nav-option">
                         <a href="index.html" class="home" >Home</a>
                     </li>
-
+    
                     <li class="nav-option">
                         <a href="aprender.html" class="aprender" target="_blank">Aprender</a>
                     </li>
-
+    
                     <li class="nav-option">
                         <a href="login.html" target="_blank" class="login">Acceder</a>
                     </li>
-
+    
                     <li class="nav-option">
                         <a href="#myModal" class="create-account" class="a-redi">Crear cuenta</a>
                     </li>
                 </ul>
             </div>
         </nav>
-
+    
         <!-- modal crear cuenta -->
         <div id="myModal" class="container-modal">
             <div class="modal-content">
-            <a href="aprender.html" class="close-modal" onclick="closeModal()">&times;</a>
+            <a href="index.html" class="close-modal" onclick="closeModal()">&times;</a>
             <h2 class="text-color title-modal">Regístrate</h2>
         
             <form class="form-create" id="formCreateUser">
@@ -83,7 +83,7 @@
     
         <main>
             <div class="home-info">
-               <h1> Aprender es vivir</h1>
+            <h1> Aprender es vivir</h1>
                 <text class="about-us">LearnYOUP es una incorporación de educación virtual dedicada a compartir el conocimiento en todo el mundo. Lo ideal es que aquí tengas una guía para aprender lo que quieras en todos las temáticas que necesites.</text>
         
                 <img src="assets/logoi.png" alt="" srcset="Nunca es tarde para aprender">
@@ -92,25 +92,25 @@
             <div class="mission">
                 <img src="https://ethic.es/wp-content/uploads/2021/04/Untitled-design-18.jpg" alt="" class="img-mission">
         
-               <div class="infor-mission">
+            <div class="infor-mission">
                     <p class="text-color">
                         Nuestra misión es compartir guias de conocimiento para facilitar a cualquier persona el acceso a cursos y rutas de alta calidad, sin importar su región, edad, ocupación o ingresos.
                     </p>
-               </div>
+            </div>
             </div>
         
             <div class="container-tools">
                 <h2 class="text-color"><em>Te damos las herramientas para aprender</em></h2>
         
                 <div class="tools">
-
+    
                     <div class="design-tools">
                         <p class="title-tools"><strong>Crea</strong></p>
                         <i class="fa-solid fa-chalkboard-user icon-tools"></i>
                         <p class="description-tools">
                             Adquiere el conocimiento necesario para convertir tus ideas en nuevos proyectos.
                         </p>
-
+    
                     </div>
             
                     <div class="design-tools">
@@ -168,19 +168,20 @@
                 </div>
             </div>
         </main>
-
+    
         <footer>
             <div class="footer-content">
-              <p class="info-year">&copy; 2023 LearnYOUP</p>
-              <ul class="footer-links">
+            <p class="info-year">&copy; 2023 LearnYOUP</p>
+            <ul class="footer-links">
                 <li><a href="index.html">Acerca de nosotros</a></li>
                 <li><a href="#">Términos y condiciones</a></li>
                 <li><a href="#">Política de privacidad</a></li>
-              </ul>
+            </ul>
             </div>
         </footer>
-        
-        <script src="js/create-account.js"></script>
-    </body>
-</div>
+    </div>
+    
+    <script src="js/create-account.js"></script>
+</body>
+
 </html>
