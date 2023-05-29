@@ -3,6 +3,10 @@ body{
     margin: 0 auto
 }
 
+.container{
+    position: relative;
+}
+
 .text-color{
     color: #031b4e;
 }
