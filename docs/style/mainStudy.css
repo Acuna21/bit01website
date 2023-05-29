@@ -1,14 +1,14 @@
+body{
+    margin: 0;
+}
+
 .color{
     color: #031b4e;
 }
 
-
 .keep-learning, .container-recommended{
     display: flex;
-    justify-content: space-around;
     margin-bottom: 3rem;
-   
-
 }
 
 .car-curse{
@@ -18,8 +18,13 @@
     padding: 20px;
     border-radius: 5px;
     margin: 0.5rem;
+    cursor: pointer;
+    width: 330px;
 }
 
+.car-curse:hover{
+    background-color: #c9d9f4;
+}
 
 .container-image{
     padding: 10px;
@@ -55,13 +60,14 @@
     display: flex;
 }
 
+
 .more-curses{
     display: flex;
     align-items: center;
 }
 
 .more-curses img{
-    width: 50px;
+    width: 40px;
 }
 
 .curse-recommended{
@@ -69,6 +75,13 @@
     border-radius: 4px;
     border: 1px solid #ccc;
     padding: 10px;
+    cursor: pointer;
+    width: 300px;
+    margin-right: 1rem;
+}
+
+.curse-recommended:hover{
+    border: 2px solid #ccc;
 }
 
 .img-recommended, .more-curses image{
@@ -78,4 +91,30 @@
 
 .curse-recommended h4{
     font-size: 20px;
+}
+
+@media only screen and (max-device-width: 1025px){
+    .keep-learning{
+        display: flex;
+    }
+
+    .learning, .container-recommended{
+        text-align: center;
+    }
+
+    .curses{
+        flex-direction: column;
+        margin-right: 2rem;
+    }
+
+    .car-curse{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .container-recommended {
+        display: grid;
+        gap: 5px;
+        margin-bottom: 3rem;
+    }
 }
