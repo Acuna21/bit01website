@@ -115,9 +115,7 @@ body{
 }
 
 @media only screen and (max-device-width: 1025px){
-    .keep-learning{
-        display: flex;
-    }
+    
 
     .learning, .container-recommended{
         text-align: center;
@@ -125,12 +123,6 @@ body{
 
     .curses{
         flex-direction: column;
-        margin-right: 2rem;
-    }
-
-    .car-curse{
-        flex-direction: column;
-        padding: 10px;
     }
 
     .container-recommended {
@@ -139,7 +131,22 @@ body{
         margin-bottom: 3rem;
     }
 
+    .car-curse{
+        width: 300px;
+    }
+
     .info-curse{
         justify-content: center
+    }
+
+    .curse-recommended{
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-device-width: 668px){
+    .car-curse{
+        width: 250px;
     }
 }

@@ -3,7 +3,7 @@
 let listUser = [
     {
     name: "Sara",
-    user:"saraacuna@gmail.com",
+    user:"sara@gmail.com",
     password: "sara123",
     phone: "3007302949",
     },
@@ -16,19 +16,19 @@ let listUser = [
     },
 
     {
-        name: "Prueba",
-        user:"123@gmail.com",
-        password: "123",
-        phone: "3007302001",
-        }
+      name: "Prueba",
+      user:"123@gmail.com",
+      password: "123",
+      phone: "3007302001",
+    }
 ]
-    
+
 
 // Validando los datos del formulario de login
 document.getElementById("formLogin").addEventListener("submit", (event)=> {
     event.preventDefault();
     let email = document.getElementById("user").value;
-    let  password = document.getElementById("password").value;
+    let  password = document.getElementById("password-login").value;
 
     let alertUser = document.getElementById("alertUser");
     let alertPassword = document.getElementById("alertPassword");
@@ -46,7 +46,10 @@ document.getElementById("formLogin").addEventListener("submit", (event)=> {
             // Usuario y contraseña correctos
             alertUser.textContent = null;
             alertPassword.textContent = null;
-            loginMessage.textContent = "Inicio de sesión correcto";
+            loginMessage.textContent = "Inicio de sesión correcto. Bienvenido.";
+
+            // Mostrar alerta de inicio de sesión
+            showAlert(loginMessage.textContent);
 
             // Redirigir a la página donde hay cursos
             window.location.href = "mainStudy.html";
@@ -63,79 +66,7 @@ document.getElementById("formLogin").addEventListener("submit", (event)=> {
     }
 });
 
-// Crear un nuevo usuario y guardarlo en listUser
-document.getElementById("formCreateUser").addEventListener("submit", (event) => {
-    event.preventDefault();
-  
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let phone = document.getElementById("phone").value;
-    let password = document.getElementById("passwordCreated").value;
-    let confirmedPassword = document.getElementById("confirmed-password").value;
-  
-    let createUserMessage = document.getElementById("createUserMessage");
-    let createUserMessageError = document.getElementById("createUserMessageError");
-  
-    // Verificar si el usuario ya existe en listUser
-    let existingUser = listUser.find((user) => user.email === email);
-    if (existingUser) {
-      createUserMessageError.textContent = "El usuario que ingresaste ya existe. Por favor, verifica los datos.";
-      return;
-    }
-  
-    // Verificar si los campos requeridos están completos
-    if (!name || !email || !password || !confirmedPassword) {
-      alert("Por favor, completa todos los campos del formulario.");
-      return;
-    }
-  
-    // Verificar si las contraseñas coinciden
-    if (password !== confirmedPassword) {
-      alert("Las contraseñas no coinciden. Por favor, verifica.");
-      return;
-    }
-
-    // Verificar si se ingresó el número de teléfono
-    if (!phone) {
-        alert("Por favor, ingresa tu número de teléfono.");
-        return;
-    }
-  
-    // Crear un nuevo objeto de usuario
-    let newUser = {
-      name: name,
-      email: email,
-      phone: phone,
-      password: password
-    };
-  
-    // Agregar el nuevo usuario a la lista listUser
-    listUser.push(newUser);
-  
-    // Mostrar los detalles del usuario creado con éxito
-    alert(`¡Usuario creado con éxito!
-        Nombre: ${newUser.name}
-        Correo electrónico: ${newUser.email}
-        Teléfono: ${newUser.phone}`
-    );
-
-    closeModal();
-    console.log(listUser);
-
-    // Redirigir a otra página después de 2 segundos
-    setTimeout(() => {
-        window.location.href = "mainStudy.html";
-    }, 500);
-
-
-    // Restablecer los valores del formulario
-    document.getElementById("formCreateUser").reset();
-  });
-  
-  
-  function closeModal() {
-    let modal = document.getElementById("myModal");
-    let form = document.getElementById("formCreateUser");
-    modal.style.display = "none";
-    form.reset();
-  }
+// Función para mostrar una alerta
+function showAlert(message) {
+  alert(message);
+}
