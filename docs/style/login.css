@@ -1,16 +1,18 @@
 body{
     background-color: #f4f4f4;
-    margin: 20rem 0rem 0rem 20rem;
-    width: 600px;
-    height: 600px;
+    margin: 0 auto
 }
 
-input{
+.text-color{
+    color: #031b4e;
+}
+
+.input-login{
     min-width: 250px;
     border: 1px solid #031b4e;;
 }
 
-input:focus {
+.input-login:focus {
     outline: none;
 }
 
@@ -20,41 +22,17 @@ h2{
     margin-bottom: 4rem;
 }
 
-img{
-    border-radius: 5px;
-}
-
-span{
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    font-size: 18px;
-    justify-content: center;
-}
-
-a{
-    color: #031b4e;
-}
 /* linea de bajo general */
 .defect:hover{
     text-decoration: underline;
     cursor: pointer;
 }
 
-.text-color{
-    color: #031b4e;
-}
 
-.title{
+.title-login{
     justify-content: center;
-    width: 300px;
     margin-bottom: 1rem;
     display: flex;
-}
-
-.container-login{
-    display: flex;
-    width: 350px;
 }
 
 .login-form{
@@ -62,17 +40,23 @@ a{
     border-bottom: 1px solid #ccc;
 }
 
-.login{
-    margin-left: 3rem;
+.login-main{
+    display: flex;
+    width: 350px;
+}
+
+.info-login{
+    margin: 0 auto;
     border: 1px solid #ccc;
     padding: 2rem 4rem;
     border-radius: 4px;
+    max-width: 400px;
+    margin-top: 5rem;
 }
 
 .valid{
     color: #f02849;
     margin-top: 0;
-   
 }
 
 .exitLogin{
@@ -81,7 +65,13 @@ a{
     margin-top: 0;
 }
 
-.button-send, input{
+.input-login{
+    height: 35px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.button-send, .input{
     height: 35px;
     border-radius: 4px;
     margin-bottom: 10px;
@@ -103,120 +93,37 @@ a{
     border: 1px solid #0056bf;
 }
 
-
-/* Estilos para el modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 4px;
-}
-
-.modal:target {
-    display: block;
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 8px;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.title-modal{
-    border-bottom: 1px solid #ccc;
+.option-login{
     text-align: center;
-    margin-bottom: 10px;
 }
 
-.form-create{
+.open-modal{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
+    padding: 1rem;
+    font-size: 18px;
+    justify-content: center;
 }
 
-.button-create{
-    height: 35px;
-    width: 220px;
-    border-radius: 4px;
-    background-color: #1d448e;
-    cursor: pointer;
-    color: white;
-}
 
-.button-create:hover{
-    background-color: #0056bf;
-    border: 1px solid #0056bf;
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
-
-    body{
-        margin: 0;
-        padding: 40px;
-    }
-    
-    .title{
-        margin-bottom: 0;
-    }
-
-
-    .login{
-        margin-left: 0;
-        border: none;
-    }
-
-    img{
-        display: none;
-    }
-
-    .modal-content{
-        width: 50%;
+@media only screen and (max-device-width: 1025px) {
+    .info-login{
+        border: 1px solid #ccc;
     }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px){
-    img{
-        display: none;
+
+@media screen and (max-device-width: 668px){
+    h2{
+        font-size: 25px;
     }
 
-    body{
-        padding:0rem;
-        margin: 0;
-        
+    .info-login{
+        margin-top: 0;
+        border: 0;
     }
 
-    .title{
-        margin-top: 1rem;
-        margin-bottom: 0;
-    }
-
-    .container-login{
-        justify-content: center;
-    }
-
-    .login{
-        border: none;
-        /* margin-left: 0; */
-        padding: 0;
-        margin: 0;
+    .title-login {
+        margin-bottom: 1rem;
     }
 }

@@ -13,7 +13,14 @@ let listUser = [
     user:"acunabenavides@hotmail.com",
     password: "acuna123",
     phone: "3007302000",
-    }
+    },
+
+    {
+        name: "Prueba",
+        user:"123@gmail.com",
+        password: "123",
+        phone: "3007302001",
+        }
 ]
     
 
@@ -50,13 +57,10 @@ document.getElementById("formLogin").addEventListener("submit", (event)=> {
         }
     } else {
         // Usuario incorrecto
-        alertUser.textContent = "Email o usuarios incorrecto";
+        alertUser.textContent = "Los datos que ingreso son incorrectos. Por favor, verifique su cuenta o cree una nueva";
         alertPassword.textContent = null;
 
     }
-    
-
-
 });
 
 // Crear un nuevo usuario y guardarlo en listUser
@@ -105,3 +109,8 @@ document.getElementById("formCreateUser").addEventListener("submit", (event) => 
         console.log("Error: campos incompletos o contraseñas no coinciden");
     }
 });
+
+
+function closeModal(){
+    document.getElementById("formLogin").reset;
+}

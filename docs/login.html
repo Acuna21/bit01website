@@ -4,84 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de sesion</title>
+    <title>Inicio de sesión</title>
     <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/modal.css">
     
 </head>
 
 <body>
-
-    <div class="container-login">
-        <div>
-            <!-- imagen alucion al curso-->
-            <img src="https://classic.exame.com/wp-content/uploads/2020/04/gettyimages-1168910967-e1587388035606.jpg?quality=70&strip=info&w=1024" alt="" width="500px" height="600px">
+    <nav>
+        <div class="lema">
+            <a href="index.html"><img src="assets/logo2.png" class="logo"></a>
         </div>
-    
-        <div class="login">
-            <!-- login -->
-            <div class="title">
-                <h2 class="text-color">¡Es hora de aprender!</h2>
-            </div>
-    
-            <form class="login-form" id="formLogin">
-                
-                <label for="user"></label>
-                <input type="user" id="user" name="user" placeholder="Correo electrónico, télefono o usuario">
-                <p id="alertUser" class="valid"></p>
+        
+    </nav>
 
-                <label for="password"></label>
-                <input type="password" id="password" name="password" placeholder="Contraseña">
-                <p id="alertPassword" class="valid"></p>
+    <div class="info-login">
+        <!-- login -->
+        <div class="title-login">
+            <h2 class="text-color">¡Es hora de aprender!</h2>
+        </div>
 
-                <p class="exitLogin" id=" loginMessage"></p>
+        <form class="login-form" id="formLogin">
+            <label for="user"></label>
+            <input type="user" id="user" name="user" placeholder="Correo electrónico, télefono o usuario" class="input-login">
+            <p id="alertUser" class="valid"></p>
 
-                <button type="submit" class="button-send" id="sub">Iniciar sesión</button>
-            </form>
+            <label for="password"></label>
+            <input type="password" id="password" name="password" placeholder="Contraseña" class="input-login">
+            <p id="alertPassword" class="valid"></p>
 
-            <div class="new-con">
-                <span class="text-color defect"><a href="recover-account.html" target="_blank">¿Olvidaste tu contraseña?</a></span>
+            <p class="exitLogin" id=" loginMessage"></p>
 
-                <span> 
-                    <a href="#myModal" id="registerLink">¿No tienes una cuenta? <strong>Registrate</a></strong>
-                </span>
-            </div>
+            <button type="submit" class="button-send" id="sub">Iniciar sesión</button>
+        </form>
+
+        <div class="option-login">
+            <span class="text-color defect"><a href="recover-account.html" target="_blank" class="text-color">¿Olvidaste tu contraseña?</a></span>
+
+            <span class="open-modal"> 
+                <a href="#myModal" id="registerLink" class="text-color">¿No tienes una cuenta? <strong>Registrate</a></strong>
+            </span>
         </div>
     </div>
+    
 
-    <!-- Modal -->
-    <div id="myModal" class="modal">
+    <!-- modal crear cuenta -->
+    <div id="myModal" class="container-modal">
         <div class="modal-content">
-           <a href="recover-account.html" class="close">&times;</a>
+           <a href="login.html" class="close-modal" onclick="closeModal()">&times;</a>
            <h2 class="text-color title-modal">Registrate</h2>
-
+    
            <form class="form-create" id="formCreateUser">
                <label for="name"></label>
-               <input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo" required>
-
+               <input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo" required class="input-modal">
+    
                <label for="email"></label>
-               <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
-
+               <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required class="input-modal">
+    
                <label for="phone"></label>
-               <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número de teléfono">
-
+               <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número de teléfono" class="input-modal">
+    
                <label for="password"></label>
-               <input type="password" id="passwordCreated" name="password" placeholder="Ingresa tu contraseña" required>
-
+               <input type="password" id="passwordCreated" name="password" placeholder="Ingresa tu contraseña" required class="input-modal">
+    
                <label for="confirmed-password"></label>
-               <input type="password" id="confirmed-password" name="confirmed-password" placeholder="Confirma tu contraseña" required>
-
+               <input type="password" id="confirmed-password" name="confirmed-password" placeholder="Confirma tu contraseña" required class="input-modal">
+    
                <p class="exitLogin" id="createUserMessage"></p>
-
+    
                <p class="valid" id="createUserMessageError"></p>
-
+    
                <button type="submit" class="button-create">Crear cuenta</button>
              </form>
         </div>
     <!-- Pagina de inicio de sesion -->
     </div>
-
+    
     <script src="./js/login.js"></script>
 </body>
 </html>

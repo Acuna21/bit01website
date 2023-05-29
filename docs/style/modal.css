@@ -1,0 +1,74 @@
+/* Estilos para el modal */
+.container-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.container-modal:target {
+    display: block;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.input-modal{
+    height: 35px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    min-width: 250px;
+    border: 1px solid #031b4e;;
+}
+
+.input-login:focus {
+    outline: none;
+}
+
+.close-modal{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.title-modal{
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-create{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.button-create{
+    height: 35px;
+    max-width: 220px;
+    border-radius: 4px;
+    background-color: #1d448e;
+    cursor: pointer;
+    color: white;
+}
+
+.button-create:hover{
+    background-color: #0056bf;
+    border: 1px solid #0056bf;
+}
