@@ -6,9 +6,25 @@ body{
     color: #031b4e;
 }
 
-.keep-learning, .container-recommended{
+.container{
+    text-align: center;
+}
+
+.keep-learning{
     display: flex;
     margin-bottom: 3rem;
+}
+
+.container-recommended{
+    display: flex;
+    margin-bottom: 3rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.curses{
+    display: flex;
 }
 
 .car-curse{
@@ -19,7 +35,7 @@ body{
     border-radius: 5px;
     margin: 0.5rem;
     cursor: pointer;
-    width: 330px;
+    width: 20%px;
 }
 
 .car-curse:hover{
@@ -76,8 +92,8 @@ body{
     border: 1px solid #ccc;
     padding: 10px;
     cursor: pointer;
-    width: 300px;
-    margin-right: 1rem;
+    width: 25%;
+    margin-bottom: 1rem;
 }
 
 .curse-recommended:hover{
@@ -91,6 +107,11 @@ body{
 
 .curse-recommended h4{
     font-size: 20px;
+}
+
+.info-curse{
+    display: flex;
+    justify-content: center;
 }
 
 @media only screen and (max-device-width: 1025px){
@@ -116,5 +137,9 @@ body{
         display: grid;
         gap: 5px;
         margin-bottom: 3rem;
+    }
+
+    .info-curse{
+        justify-content: center
     }
 }
